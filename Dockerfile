@@ -3,7 +3,7 @@ MAINTAINER Jerome Jiang "jeromefromcn@gmail.com"
 
 # Graphviz
 WORKDIR /usr/bin
-RUN apt-get install Graphviz
+RUN apt-get install Graphviz -y
 
 ADD assets/ /app/
 RUN chmod 755 /app/setup/install
